@@ -3,3 +3,12 @@
 <hr>
 <%= link_to "Edit Post", edit_post_path(@post), :class => 'btn btn-default' %>
 <%= link_to "Delete Post", post_path(@post),method: :delete, data: {confirm: "Are you sure?"}, :class => 'btn btn-danger' %>
+<hr>
+
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>
+
+
+
+
+
